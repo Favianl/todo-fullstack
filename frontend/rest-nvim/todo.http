@@ -1,0 +1,23 @@
+GET {{VITE_BASE_URL}}/test
+
+POST {{VITE_BASE_URL}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{EMAIL_ONE}}",
+  "password": "{{PASS_ONE}}"
+}
+
+GET {{VITE_BASE_URL}}/tasks
+Cookie: {{COOKIE_ONE}} 
+
+
+
+PATCH {{VITE_BASE_URL}}/tasks/75
+Content-Type: application/json
+Cookie: {{COOKIE_ONE}} 
+
+{
+  "description": "any word..."
+}
+
